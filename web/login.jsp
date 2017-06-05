@@ -39,14 +39,14 @@
                         <div class="header">
                             <div class="logo text-center"><img src="assets/img/logo-dark.png" alt="Klorofil Logo"></div>
                         </div>
-                        <form class="form-auth-small" action="#">
+                        <form class="form-auth-small" action="student/index.jsp">
                             <div class="form-group">
-                                <label for="signin-email" class="control-label sr-only">xuehao</label>
-                                <input type="email" class="form-control" id="signin-email" value="" placeholder="学号">
+                                <label for="x_id" class="control-label sr-only">xuehao</label>
+                                <input type="email" class="form-control" id="x_id" name="x_id" value="" placeholder="学号">
                             </div>
                             <div class="form-group">
                                 <label for="signin-password" class="control-label sr-only">Password</label>
-                                <input type="password" class="form-control" id="signin-password" value="" placeholder="密码">
+                                <input type="password" class="form-control" id="signin-password" name="signin-password" value="" placeholder="密码">
                             </div>
                             <div class="form-group clearfix">
                                 <label class="fancy-checkbox element-left">
