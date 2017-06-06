@@ -9,7 +9,7 @@
 <html lang="en" class="fullscreen-bg">
 
 <head>
-    <title>登录-教务系统title>
+    <title>登录-教务系统</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -39,7 +39,7 @@
                         <div class="header">
                             <div class="logo text-center"><img src="assets/img/logo-dark.png" alt="Klorofil Logo"></div>
                         </div>
-                        <form class="form-auth-small" action="student/index.jsp">
+                        <form class="form-auth-small" action="login">
                             <div class="form-group">
                                 <label for="x_id" class="control-label sr-only">xuehao</label>
                                 <input type="email" class="form-control" id="x_id" name="x_id" value="" placeholder="学号">
