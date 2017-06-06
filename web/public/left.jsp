@@ -12,20 +12,20 @@
     <div class="sidebar-scroll">
         <nav>
             <ul class="nav">
-                <li><a href="index.html" class="active"><i class="lnr lnr-home"></i> <span>总览</span></a></li>
+                <li><a href="index.jsp" class="active"><i class="lnr lnr-home"></i> <span>总览</span></a></li>
                 <li>
                     <a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>学生管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
                     <div id="subPages" class="collapse ">
                         <ul class="nav">
-                            <li><a href="#" class="">学生总览</a></li>
+                            <li><a href="/pandect.jsp" class="">学生总览</a></li>
                             <li><a href="#" class="">添加学生</a></li>
                             <li><a href="#" class="">删除学生</a></li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>课程管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
-                    <div id="subPages" class="collapse ">
+                    <a href="#subPage" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>课程管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+                    <div id="subPage" class="collapse ">
                         <ul class="nav">
                             <li><a href="#" class="">课程总览</a></li>
                             <li><a href="#" class="">添加课程</a></li>
@@ -34,7 +34,6 @@
                     </div>
                 </li>
                 <li><a href="#" class=""><i class="lnr lnr-text-format"></i> <span>个人中心</span></a></li>
-                <li><a href="tables.html" class=""><i class="lnr lnr-dice"></i> <span>Tables</span></a></li>
             </ul>
         </nav>
     </div>

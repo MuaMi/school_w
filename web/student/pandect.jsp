@@ -87,12 +87,12 @@
 
                     </div>
                 </div>
-                        </div>
-                    </div>
-
-
+            </div>
         </div>
-        <!-- END MAIN CONTENT -->
+
+
+    </div>
+    <!-- END MAIN CONTENT -->
 
     <!-- END MAIN -->
     <div class="clearfix"></div>

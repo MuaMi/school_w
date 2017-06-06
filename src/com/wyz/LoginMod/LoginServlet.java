@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 public class LoginServlet extends HttpServlet{
 	/**
 	 * 
-	 * @param phone手机号
+	 * @param xh 学号
 	 * @param pass密码
 	 * @throws Exception
 	 * 
@@ -21,17 +21,26 @@ public class LoginServlet extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String phone = request.getParameter("phone");
+		String u_number = request.getParameter("u_number");
 		String pass = request.getParameter("password");
+		String status = request.getParameter("status");
 		String loginResponse = " ";
 		
 		try {
-			loginResponse = LoginDao.StuLogin(phone,pass);
+			loginResponse = LoginDao.StuLogin(u_number,pass);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		request.setAttribute("login", loginResponse);
-		request.getRequestDispatcher("/web-app/login.jsp").forward(request, response);
+		if (status.equals("1")){
+			request.setAttribute("login", loginResponse);
+			request.getRequestDispatcher("/web/student/index.jsp").forward(request, response);
+		}else if(status.equals("2")){
+			request.setAttribute("login", loginResponse);
+			request.getRequestDispatcher("/web/teacher/index.jsp").forward(request, response);
+		}else  if(status.equals("0")){
+			request.setAttribute("login", loginResponse);
+			request.getRequestDispatcher("/web/student/index.jsp").forward(request, response);
+		}
 	}
 	
 	@Override

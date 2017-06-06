@@ -9,7 +9,7 @@
 <html lang="en" class="fullscreen-bg">
 
 <head>
-    <title>Login | Klorofil - Free Bootstrap Dashboard Template</title>
+    <title>登录-教务管理系统</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -37,16 +37,23 @@
                 <div class="left">
                     <div class="content">
                         <div class="header">
-                            <div class="logo text-center"><img src="assets/img/logo-dark.png" alt="Klorofil Logo"></div>
+                            <div class="logo text-center"><img src="assets/img/logo-dark.png"></div>
                         </div>
-                        <form class="form-auth-small" action="student/index.jsp">
+                        <form class="form-auth-small" action="teacher/index.jsp" method="post">
                             <div class="form-group">
-                                <label for="x_id" class="control-label sr-only">xuehao</label>
-                                <input type="email" class="form-control" id="x_id" name="x_id" value="" placeholder="学号">
+                                <label for="u_number" class="control-label sr-only">u_number</label>
+                                <input type="text" class="form-control" id="u_number" name="u_number" value="" placeholder="学号">
                             </div>
                             <div class="form-group">
-                                <label for="signin-password" class="control-label sr-only">Password</label>
-                                <input type="password" class="form-control" id="signin-password" name="signin-password" value="" placeholder="密码">
+                                <label for="password" class="control-label sr-only">Password</label>
+                                <input type="password" class="form-control" id="password" name="password" value="" placeholder="密码">
+                            </div>
+                            <div class="form-group">
+                            <select class="form-control">
+                                <option value="1">学生</option>
+                                <option value="2">教师</option>
+                                <option value="0">管理员</option>
+                            </select>
                             </div>
                             <div class="form-group clearfix">
                                 <label class="fancy-checkbox element-left">
